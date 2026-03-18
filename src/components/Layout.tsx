@@ -1,7 +1,14 @@
-import { Anchor } from 'lucide-react';
+import { Anchor, Globe } from 'lucide-react';
 import { Outlet, Link } from 'react-router-dom';
+import { useLanguage } from '../i18n/LanguageContext';
 
 export default function Layout() {
+  const { language, setLanguage, t } = useLanguage();
+
+  const toggleLanguage = () => {
+    setLanguage(language === 'de' ? 'en' : 'de');
+  };
+
   return (
     <div className="min-h-screen flex flex-col font-sans bg-background text-foreground">
       {/* Navigation */}
@@ -13,17 +20,26 @@ export default function Layout() {
               <span className="text-2xl font-bold text-foreground tracking-tight">Fiorella's Cannes Oasis</span>
             </Link>
             <div className="hidden md:flex space-x-8">
-              <a href="/#apartment" className="text-muted-foreground hover:text-primary transition-colors font-medium text-sm">Das Apartment</a>
-              <a href="/#galerie" className="text-muted-foreground hover:text-primary transition-colors font-medium text-sm">Galerie</a>
-              <a href="/#lage" className="text-muted-foreground hover:text-primary transition-colors font-medium text-sm">Lage</a>
-              <a href="/#bewertungen" className="text-muted-foreground hover:text-primary transition-colors font-medium text-sm">Bewertungen</a>
+              <a href="/#apartment" className="text-muted-foreground hover:text-primary transition-colors font-medium text-sm">{t('nav', 'apartment')}</a>
+              <a href="/#galerie" className="text-muted-foreground hover:text-primary transition-colors font-medium text-sm">{t('nav', 'gallery')}</a>
+              <a href="/#lage" className="text-muted-foreground hover:text-primary transition-colors font-medium text-sm">{t('nav', 'location')}</a>
+              <a href="/#bewertungen" className="text-muted-foreground hover:text-primary transition-colors font-medium text-sm">{t('nav', 'reviews')}</a>
             </div>
-            <a 
-              href="mailto:cannes.fiorella@gmail.com" 
-              className="btn-primary"
-            >
-              Anfragen
-            </a>
+            <div className="flex items-center gap-4">
+              <button 
+                onClick={toggleLanguage}
+                className="flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Globe className="w-4 h-4" />
+                {language === 'de' ? 'EN' : 'DE'}
+              </button>
+              <a 
+                href="mailto:cannes.fiorella@gmail.com" 
+                className="btn-primary"
+              >
+                {t('nav', 'inquire')}
+              </a>
+            </div>
           </div>
         </div>
       </nav>
@@ -41,10 +57,10 @@ export default function Layout() {
               <span className="font-bold text-foreground">Fiorella's Cannes Oasis</span>
             </div>
             <div className="flex gap-6 text-sm">
-              <Link to="/impressum" className="text-muted-foreground hover:text-primary transition-colors font-medium">Impressum</Link>
-              <Link to="/datenschutz" className="text-muted-foreground hover:text-primary transition-colors font-medium">Datenschutz</Link>
+              <Link to="/impressum" className="text-muted-foreground hover:text-primary transition-colors font-medium">{t('nav', 'imprint')}</Link>
+              <Link to="/datenschutz" className="text-muted-foreground hover:text-primary transition-colors font-medium">{t('nav', 'privacy')}</Link>
             </div>
-            <p className="text-xs text-muted-foreground font-medium">© {new Date().getFullYear()} Fiorella's Cannes Oasis. Alle Rechte vorbehalten.</p>
+            <p className="text-xs text-muted-foreground font-medium">© {new Date().getFullYear()} Fiorella's Cannes Oasis. {t('nav', 'rights')}</p>
           </div>
         </div>
       </footer>

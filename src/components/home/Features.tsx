@@ -1,7 +1,10 @@
 import { motion } from 'motion/react';
 import { Sun, Wifi, Wind, Tv, Car, Utensils } from 'lucide-react';
+import { useLanguage } from '../../i18n/LanguageContext';
 
 export default function Features() {
+  const { t } = useLanguage();
+
   return (
     <section className="py-20 lg:py-32 bg-card" id="apartment">
       <div className="max-w-[1400px] mx-auto px-8">
@@ -16,7 +19,7 @@ export default function Features() {
             <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-card">
               <img 
                 src="/images/apartment.jpg" 
-                alt="Helles, freundliches Apartment Interieur" 
+                alt={t('features', 'imgAlt')}
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
@@ -27,8 +30,8 @@ export default function Features() {
                   <Sun className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-semibold tracking-tight">Lichtdurchflutet</h4>
-                  <p className="text-sm text-muted-foreground mt-1">Südfranzösische Sonne</p>
+                  <h4 className="text-xl font-semibold tracking-tight">{t('features', 'badgeTitle')}</h4>
+                  <p className="text-sm text-muted-foreground mt-1">{t('features', 'badgeSub')}</p>
                 </div>
               </div>
             </div>
@@ -41,20 +44,20 @@ export default function Features() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 tracking-tight">
-              Ein Zuhause mit <br/><span className="text-primary">mediterranem Charme</span>
+              {t('features', 'title1')} <br/><span className="text-primary">{t('features', 'title2')}</span>
             </h2>
             <p className="text-base text-muted-foreground mb-8 leading-relaxed">
-              Die Unterkunft Fiorella's Cannes Oasis besticht durch ihre helle, moderne und liebevolle Einrichtung. Auf 65 m² bietet das Apartment mit 2 Schlafzimmern, einem großzügigen Wohnbereich mit Schlafsofa und einer voll ausgestatteten Küche ausreichend Platz für bis zu 4 Gäste. Genießen Sie entspannte Stunden auf dem Balkon mit Blick auf die Stadt und den Garten.
+              {t('features', 'description')}
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-8 mb-10">
               {[
-                { icon: <Wifi className="w-5 h-5 text-primary" />, text: 'Kostenloses WLAN' },
-                { icon: <Wind className="w-5 h-5 text-primary" />, text: 'Klimaanlage' },
-                { icon: <Utensils className="w-5 h-5 text-primary" />, text: 'Küche mit Geschirrspüler' },
-                { icon: <Sun className="w-5 h-5 text-primary" />, text: 'Balkon & Gartenblick' },
-                { icon: <Tv className="w-5 h-5 text-primary" />, text: 'Flachbild-TV' },
-                { icon: <Car className="w-5 h-5 text-primary" />, text: 'Kostenloser Parkplatz' },
+                { icon: <Wifi className="w-5 h-5 text-primary" />, text: t('features', 'wifi') },
+                { icon: <Wind className="w-5 h-5 text-primary" />, text: t('features', 'ac') },
+                { icon: <Utensils className="w-5 h-5 text-primary" />, text: t('features', 'kitchen') },
+                { icon: <Sun className="w-5 h-5 text-primary" />, text: t('features', 'balcony') },
+                { icon: <Tv className="w-5 h-5 text-primary" />, text: t('features', 'tv') },
+                { icon: <Car className="w-5 h-5 text-primary" />, text: t('features', 'parking') },
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-4">
                   <div className="bg-secondary p-2.5 rounded-xl shrink-0">
@@ -68,15 +71,15 @@ export default function Features() {
             <div className="grid grid-cols-3 gap-4 p-6 bg-muted rounded-2xl border border-border">
               <div>
                 <p className="text-2xl md:text-3xl font-bold text-foreground mb-1">4</p>
-                <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider">Gäste</p>
+                <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider">{t('features', 'guests')}</p>
               </div>
               <div>
                 <p className="text-2xl md:text-3xl font-bold text-foreground mb-1">2</p>
-                <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider">Schlafzimmer</p>
+                <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider">{t('features', 'bedrooms')}</p>
               </div>
               <div>
                 <p className="text-2xl md:text-3xl font-bold text-foreground mb-1">65</p>
-                <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider">m²</p>
+                <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider">{t('features', 'sqm')}</p>
               </div>
             </div>
           </motion.div>

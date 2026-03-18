@@ -1,10 +1,28 @@
-import { createContext, useContext, ReactNode } from 'react';
+import React, { createContext, useState, useContext, ReactNode } from 'react';
+import { translations, Language } from './translations';
 
 interface LanguageContextType {
-  // Placeholder for future language state
+  language: Language;
+  setLanguage: (lang: Language) => void;
+  t: (section: keyof typeof translations.de, key: string) => string;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+
+export const LanguageProvider = ({ children }: { children: ReactNode }) => {
+  const [language, setLanguage] = useState<Language>('de');
+
+  const t = (section: keyof typeof translations.de, key: string): string => {
+    // @ts-ignore
+    return translations[language][section][key] || key;
+  };
+
+  return (
+    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+      {children}
+    </LanguageContext.Provider>
+  );
+};
 
 export const useLanguage = () => {
   const context = useContext(LanguageContext);
@@ -13,17 +31,3 @@ export const useLanguage = () => {
   }
   return context;
 };
-
-interface LanguageProviderProps {
-  children: ReactNode;
-}
-
-export function LanguageProvider({ children }: LanguageProviderProps) {
-  const contextValue: LanguageContextType = {};
-
-  return (
-    <LanguageContext.Provider value={contextValue}>
-      {children}
-    </LanguageContext.Provider>
-  );
-}

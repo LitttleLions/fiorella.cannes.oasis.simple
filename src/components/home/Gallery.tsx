@@ -1,11 +1,15 @@
+import { useLanguage } from '../../i18n/LanguageContext';
+
 export default function Gallery() {
+  const { t } = useLanguage();
+
   return (
     <section className="py-20 lg:py-32 bg-background" id="galerie">
       <div className="max-w-[1400px] mx-auto px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Impressionen</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">{t('gallery', 'title')}</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-base">
-            Ein kleiner Einblick in Ihre zukünftige Urlaubsresidenz.
+            {t('gallery', 'subtitle')}
           </p>
         </div>
         
@@ -14,11 +18,11 @@ export default function Gallery() {
           <div className="md:col-span-2 md:row-span-2 rounded-2xl overflow-hidden shadow-card group relative">
             <img 
               src="/images/IMG_8341.jpg" 
-              alt="Wohnzimmer" 
+              alt={t('gallery', 'img1Alt')}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
             />
             <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-              <p className="text-white text-sm md:text-base font-medium">Das stilvoll eingerichtete Wohnzimmer lädt mit seinem gemütlichen Sofa und warmem Licht zum Entspannen ein.</p>
+              <p className="text-white text-sm md:text-base font-medium">{t('gallery', 'img1Desc')}</p>
             </div>
           </div>
           
@@ -26,7 +30,7 @@ export default function Gallery() {
           <div className="rounded-2xl overflow-hidden shadow-card group relative">
             <img 
               src="/images/IMG_1090.jpg" 
-              alt="Schlafzimmer (Beige)" 
+              alt={t('gallery', 'img2Alt')}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
             />
           </div>
@@ -35,7 +39,7 @@ export default function Gallery() {
           <div className="rounded-2xl overflow-hidden shadow-card group relative">
             <img 
               src="/images/IMG_3450.JPG" 
-              alt="Küche" 
+              alt={t('gallery', 'img3Alt')}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
             />
           </div>
@@ -44,7 +48,7 @@ export default function Gallery() {
           <div className="rounded-2xl overflow-hidden shadow-card group relative">
             <img 
               src="/images/IMG_8313.jpg" 
-              alt="Schlafzimmer (Blau)" 
+              alt={t('gallery', 'img4Alt')}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
             />
           </div>
@@ -53,7 +57,7 @@ export default function Gallery() {
           <div className="rounded-2xl overflow-hidden shadow-card group relative">
             <img 
               src="/images/apartment.jpg" 
-              alt="Impression" 
+              alt={t('gallery', 'img5Alt')}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
             />
           </div>
@@ -61,7 +65,7 @@ export default function Gallery() {
         
         <div className="mt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            (Bitte laden Sie die Bilder in den Ordner <code className="bg-muted px-1.5 py-0.5 rounded">public/images</code> hoch)
+            {t('gallery', 'uploadNote')}
           </p>
         </div>
       </div>
