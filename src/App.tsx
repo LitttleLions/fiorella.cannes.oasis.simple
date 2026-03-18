@@ -3,6 +3,33 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import Impressum from './pages/Impressum';
 import Datenschutz from './pages/Datenschutz';
+import GuideIndex from './pages/guide/GuideIndex';
+import FirstTimeVisitors from './pages/guide/articles/FirstTimeVisitors';
+import Croisette from './pages/guide/articles/Croisette';
+import Neighborhoods from './pages/guide/articles/Neighborhoods';
+import BasseCalifornie from './pages/guide/articles/BasseCalifornie';
+import RueDAntibes from './pages/guide/articles/RueDAntibes';
+import PalaisFestivals from './pages/guide/articles/PalaisFestivals';
+import FilmFestival from './pages/guide/articles/FilmFestival';
+import BeyondFestival from './pages/guide/articles/BeyondFestival';
+import Beaches from './pages/guide/articles/Beaches';
+import PublicVsPrivateBeaches from './pages/guide/articles/PublicVsPrivateBeaches';
+import Walks from './pages/guide/articles/Walks';
+import LeSuquet from './pages/guide/articles/LeSuquet';
+import Harbors from './pages/guide/articles/Harbors';
+import Markets from './pages/guide/articles/Markets';
+import Architecture from './pages/guide/articles/Architecture';
+import ForCouples from './pages/guide/articles/ForCouples';
+import LongWeekend from './pages/guide/articles/LongWeekend';
+import TradeFairGuests from './pages/guide/articles/TradeFairGuests';
+import MoreThanGlamour from './pages/guide/articles/MoreThanGlamour';
+import RivieraAround from './pages/guide/articles/RivieraAround';
+import CannesVsAntibes from './pages/guide/articles/CannesVsAntibes';
+import CannesVsNice from './pages/guide/articles/CannesVsNice';
+import Spring from './pages/guide/articles/Spring';
+import Summer from './pages/guide/articles/Summer';
+import Autumn from './pages/guide/articles/Autumn';
+import Winter from './pages/guide/articles/Winter';
 import { LanguageProvider } from './i18n/LanguageContext';
 
 export default function App() {
@@ -14,6 +41,35 @@ export default function App() {
             <Route index element={<Home />} />
             <Route path="impressum" element={<Impressum />} />
             <Route path="datenschutz" element={<Datenschutz />} />
+            
+            {/* Cannes Guide Routes */}
+            <Route path="cannes-guide" element={<GuideIndex />} />
+            <Route path="cannes-guide/cannes-auf-einen-blick" element={<FirstTimeVisitors />} />
+            <Route path="cannes-guide/croisette" element={<Croisette />} />
+            <Route path="cannes-guide/viertel-von-cannes" element={<Neighborhoods />} />
+            <Route path="cannes-guide/basse-californie" element={<BasseCalifornie />} />
+            <Route path="cannes-guide/rue-dantibes" element={<RueDAntibes />} />
+            <Route path="cannes-guide/palais-des-festivals" element={<PalaisFestivals />} />
+            <Route path="cannes-guide/filmfestival" element={<FilmFestival />} />
+            <Route path="cannes-guide/ausserhalb-festivalzeit" element={<BeyondFestival />} />
+            <Route path="cannes-guide/straende-cannes" element={<Beaches />} />
+            <Route path="cannes-guide/oeffentliche-private-straende" element={<PublicVsPrivateBeaches />} />
+            <Route path="cannes-guide/spaziergaenge" element={<Walks />} />
+            <Route path="cannes-guide/le-suquet" element={<LeSuquet />} />
+            <Route path="cannes-guide/haefen-yachten" element={<Harbors />} />
+            <Route path="cannes-guide/maerkte" element={<Markets />} />
+            <Route path="cannes-guide/architektur-villen" element={<Architecture />} />
+            <Route path="cannes-guide/cannes-fuer-paare" element={<ForCouples />} />
+            <Route path="cannes-guide/langes-wochenende" element={<LongWeekend />} />
+            <Route path="cannes-guide/messe-kongressgaeste" element={<TradeFairGuests />} />
+            <Route path="cannes-guide/mehr-als-glamour" element={<MoreThanGlamour />} />
+            <Route path="cannes-guide/cote-dazur-rundum" element={<RivieraAround />} />
+            <Route path="cannes-guide/cannes-antibes" element={<CannesVsAntibes />} />
+            <Route path="cannes-guide/cannes-nizza" element={<CannesVsNice />} />
+            <Route path="cannes-guide/cannes-fruehling" element={<Spring />} />
+            <Route path="cannes-guide/cannes-sommer" element={<Summer />} />
+            <Route path="cannes-guide/cannes-herbst" element={<Autumn />} />
+            <Route path="cannes-guide/cannes-winter" element={<Winter />} />
           </Route>
         </Routes>
       </Router>

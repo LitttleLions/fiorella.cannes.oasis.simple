@@ -8,7 +8,8 @@ export const translations = {
       inquire: "Anfragen",
       imprint: "Impressum",
       privacy: "Datenschutz",
-      rights: "Alle Rechte vorbehalten."
+      rights: "Alle Rechte vorbehalten.",
+      guide: "Cannes entdecken"
     },
     hero: {
       rating: "9,2 Hervorragend bewertet",
@@ -139,7 +140,8 @@ export const translations = {
       inquire: "Inquire",
       imprint: "Imprint",
       privacy: "Privacy Policy",
-      rights: "All rights reserved."
+      rights: "All rights reserved.",
+      guide: "Discover Cannes"
     },
     hero: {
       rating: "9.2 Excellently rated",

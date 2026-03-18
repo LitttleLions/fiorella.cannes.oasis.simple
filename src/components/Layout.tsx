@@ -24,6 +24,7 @@ export default function Layout() {
               <a href="/#galerie" className="text-muted-foreground hover:text-primary transition-colors font-medium text-sm">{t('nav', 'gallery')}</a>
               <a href="/#lage" className="text-muted-foreground hover:text-primary transition-colors font-medium text-sm">{t('nav', 'location')}</a>
               <a href="/#bewertungen" className="text-muted-foreground hover:text-primary transition-colors font-medium text-sm">{t('nav', 'reviews')}</a>
+              <Link to="/cannes-guide" className="text-muted-foreground hover:text-primary transition-colors font-medium text-sm">{t('nav', 'guide')}</Link>
             </div>
             <div className="flex items-center gap-4">
               <button 
