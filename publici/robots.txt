@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fiorella-cannes-oasis.pages.dev/sitemap.xml
