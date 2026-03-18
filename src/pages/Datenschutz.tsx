@@ -29,7 +29,7 @@ export default function Datenschutz() {
         <h3 className="text-xl font-semibold text-foreground mt-6 mb-3">Hinweis zur verantwortlichen Stelle</h3>
         <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
         <p>
-          Fiorella [Nachname]<br />
+          Fiorella Cannes Oasis<br />
           Max Lingner Straße 17<br />
           13189 Berlin
         </p>

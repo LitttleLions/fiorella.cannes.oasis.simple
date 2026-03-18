@@ -5,7 +5,7 @@ export default function Impressum() {
       <div className="prose prose-sand max-w-none text-muted-foreground">
         <h2 className="text-2xl font-semibold text-foreground mt-8 mb-4">Angaben gemäß § 5 TMG</h2>
         <p>
-          Fiorella [Nachname bitte ergänzen]<br />
+          Fiorella Cannes Oasis<br />
           Max Lingner Straße 17<br />
           13189 Berlin
         </p>
@@ -23,7 +23,7 @@ export default function Impressum() {
 
         <h2 className="text-2xl font-semibold text-foreground mt-8 mb-4">Redaktionell verantwortlich</h2>
         <p>
-          Fiorella [Nachname bitte ergänzen]<br />
+          Fiorella Cannes Oasis<br />
           Max Lingner Straße 17<br />
           13189 Berlin
         </p>
