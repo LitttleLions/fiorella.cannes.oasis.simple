@@ -42,7 +42,7 @@ export default function App() {
             <Route path="impressum" element={<Impressum />} />
             <Route path="datenschutz" element={<Datenschutz />} />
             
-            {/* Cannes Guide Routes */}
+            {/* Cannes Guide Routes - German */}
             <Route path="cannes-guide" element={<GuideIndex />} />
             <Route path="cannes-guide/cannes-auf-einen-blick" element={<FirstTimeVisitors />} />
             <Route path="cannes-guide/croisette" element={<Croisette />} />
@@ -70,6 +70,34 @@ export default function App() {
             <Route path="cannes-guide/cannes-sommer" element={<Summer />} />
             <Route path="cannes-guide/cannes-herbst" element={<Autumn />} />
             <Route path="cannes-guide/cannes-winter" element={<Winter />} />
+            
+            {/* Cannes Guide Routes - English */}
+            <Route path="cannes-guide/cannes-at-a-glance" element={<FirstTimeVisitors />} />
+            <Route path="cannes-guide/the-croisette" element={<Croisette />} />
+            <Route path="cannes-guide/cannes-neighborhoods" element={<Neighborhoods />} />
+            <Route path="cannes-guide/basse-californie" element={<BasseCalifornie />} />
+            <Route path="cannes-guide/rue-dantibes" element={<RueDAntibes />} />
+            <Route path="cannes-guide/palais-des-festivals" element={<PalaisFestivals />} />
+            <Route path="cannes-guide/cannes-film-festival" element={<FilmFestival />} />
+            <Route path="cannes-guide/beyond-festival-season" element={<BeyondFestival />} />
+            <Route path="cannes-guide/beaches-in-cannes" element={<Beaches />} />
+            <Route path="cannes-guide/public-vs-private-beaches" element={<PublicVsPrivateBeaches />} />
+            <Route path="cannes-guide/walks-in-cannes" element={<Walks />} />
+            <Route path="cannes-guide/le-suquet" element={<LeSuquet />} />
+            <Route path="cannes-guide/harbors-and-yachts" element={<Harbors />} />
+            <Route path="cannes-guide/markets-in-cannes" element={<Markets />} />
+            <Route path="cannes-guide/architecture-and-villas" element={<Architecture />} />
+            <Route path="cannes-guide/cannes-for-couples" element={<ForCouples />} />
+            <Route path="cannes-guide/long-weekend" element={<LongWeekend />} />
+            <Route path="cannes-guide/trade-fair-guests" element={<TradeFairGuests />} />
+            <Route path="cannes-guide/more-than-glamour" element={<MoreThanGlamour />} />
+            <Route path="cannes-guide/the-french-riviera" element={<RivieraAround />} />
+            <Route path="cannes-guide/cannes-vs-antibes" element={<CannesVsAntibes />} />
+            <Route path="cannes-guide/cannes-vs-nice" element={<CannesVsNice />} />
+            <Route path="cannes-guide/cannes-in-spring" element={<Spring />} />
+            <Route path="cannes-guide/cannes-in-summer" element={<Summer />} />
+            <Route path="cannes-guide/cannes-in-autumn" element={<Autumn />} />
+            <Route path="cannes-guide/cannes-in-winter" element={<Winter />} />
           </Route>
         </Routes>
       </Router>
