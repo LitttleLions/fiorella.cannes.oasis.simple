@@ -13,9 +13,9 @@ export const translations = {
     },
     hero: {
       rating: "9,2 Hervorragend bewertet",
-      title1: "Fiorella's Cannes Oasis",
-      title2: "Ihr Traumurlaub an der Côte d'Azur",
-      subtitle: "Entfliehen Sie dem Alltag und genießen Sie das mediterrane Lebensgefühl in unserer hellen, freundlichen Ferienwohnung. Schreiben Sie uns einfach eine E-Mail – wir antworten kurzfristig!",
+      title1: "Fiorella Oasis Cannes",
+      title2: "Basse-Californie",
+      subtitle: "Entfliehen Sie dem Alltag und genießen Sie das mediterrane Lebensgefühl in unserer hellen, freundlichen Ferienwohnung in ruhiger Lage in Cannes. Schreiben Sie uns einfach eine E-Mail – wir antworten kurzfristig!",
       cta1: "Jetzt anfragen",
       cta2: "Bilder ansehen",
       imgAlt: "Blick auf das Meer an der Côte d'Azur"
@@ -24,8 +24,8 @@ export const translations = {
       badgeTitle: "Lichtdurchflutet",
       badgeSub: "Südfranzösische Sonne",
       title1: "Ein Zuhause mit",
-      title2: "mediterranem Charme",
-      description: "Die Unterkunft Fiorella's Cannes Oasis besticht durch ihre helle, moderne und liebevolle Einrichtung. Auf 65 m² bietet das Apartment mit 2 Schlafzimmern, einem großzügigen Wohnbereich mit Schlafsofa und einer voll ausgestatteten Küche ausreichend Platz für bis zu 4 Gäste. Genießen Sie entspannte Stunden auf dem Balkon mit Blick auf die Stadt und den Garten.",
+      title2: "stilvollem Charme",
+      description: "Die Unterkunft Fiorella Oasis Cannes Basse-Californie besticht durch ihre helle, moderne Einrichtung und ruhige Wohnlage. Auf 65 m² bietet das Apartment mit 2 Schlafzimmern, einem großzügigen Wohnbereich und voll ausgestatteter Küche ausreichend Platz für bis zu 4 Gäste. Genießen Sie entspannte Stunden auf dem Balkon in angenehmer Distanz zur Croisette.",
       wifi: "Kostenloses WLAN",
       ac: "Klimaanlage",
       kitchen: "Küche mit Geschirrspüler",
@@ -49,14 +49,43 @@ export const translations = {
       uploadNote: "(Bitte laden Sie die Bilder in den Ordner public/images hoch)"
     },
     location: {
-      title: "Die perfekte Lage in Cannes",
-      subtitle: "10 Rue du Parc Alexandre III, Pointe Croisette, 06400 Cannes. Zentral gelegen und doch wunderbar ruhig.",
+      title: "Die perfekte Lage in Basse-Californie",
+      subtitle: "10 Rue du Parc Alexandre III, 06400 Cannes. Zentral, fußläufig und doch wunderbar ruhig in Cannes gelegen.",
       beachTitle: "Strandnähe",
-      beachDesc: "In weniger als 1 km erreichen Sie den wunderschönen Sandstrand Plage Gazagnaire und das azurblaue Meer.",
+      beachDesc: "Weniger als 1 km entfernt erreichen Sie den wunderschönen Sandstrand Plage Gazagnaire und das azurblaue Meer in angenehmer Distanz.",
       centralTitle: "Zentral & Praktisch",
-      centralDesc: "Nur 2,4 km zum Palais des Festivals. Supermärkte (Carrefour 250m) und Restaurants sind in wenigen Gehminuten erreichbar.",
+      centralDesc: "Die Croisette und das Zentrum sind nah. Supermärkte (Carrefour 250m) und Restaurants sind fußläufig erreichbar.",
       transportTitle: "Perfekt angebunden",
       transportDesc: "Gute Anbindung an öffentliche Verkehrsmittel. Der Flughafen Nizza (Aéroport Nice Côte d’Azur) ist nur 23 km entfernt."
+    },
+    seo: {
+      home: {
+        title: "Fiorella Oasis Cannes Basse-Californie | Ferienwohnung in Cannes",
+        description: "Fiorella Oasis Cannes Basse-Californie ist eine stilvolle Ferienwohnung in ruhiger Lage nahe Croisette, Strand und Zentrum – ideal für entspannte Cannes-Aufenthalte.",
+        h1: "Fiorella Oasis Cannes Basse-Californie"
+      },
+      location: {
+        title: "Basse-Californie in Cannes | Lage von Fiorella Oasis Cannes",
+        description: "Erfahren Sie mehr über die Lage von Fiorella Oasis Cannes im eleganten Viertel Basse-Californie – ruhig, strandnah und gut mit dem Zentrum verbunden.",
+        h1: "Fiorella Oasis Cannes in Basse-Californie"
+      },
+      landingPage: {
+        title: "Fiorella Oasis Cannes Basse-Californie | Exklusive Unterkunft",
+        description: "Entdecken Sie die Fiorella Oasis Cannes Basse-Californie. Stilvolle Ferienwohnung in einer der ruhigen und begehrtesten Lagen von Cannes.",
+        h1: "Fiorella Oasis Cannes Basse-Californie"
+      }
+    },
+    landingPage: {
+      title: "Fiorella Oasis Cannes Basse-Californie",
+      subtitle: "Ihr Rückzugsort in der eleganten Basse-Californie",
+      description: "Erleben Sie die perfekte Kombination aus Ruhe und urbanem Leben. Unsere Ferienwohnung in Basse-Californie bietet Ihnen exklusiven Komfort in unmittelbarer Nähe zur Croisette und zum Strand.",
+      benefits: [
+        "Ruhige Wohnlage im begehrten Basse-Californie Viertel",
+        "In angenehmer Distanz zur Croisette und zum Strand",
+        "Hervorragende Erreichbarkeit zentraler Punkte in Cannes",
+        "Stilvolles Ambiente für anspruchsvolle Gäste"
+      ],
+      cta: "Jetzt Aufenthalt anfragen"
     },
     reviews: {
       rating: "9,2",
@@ -86,7 +115,7 @@ export const translations = {
       title: "Kontaktieren Sie uns",
       subtitle: "Schreiben Sie uns einfach eine E-Mail mit Ihrem Wunschzeitraum. Wir antworten Ihnen kurzfristig und persönlich.",
       emailTitle: "E-Mail schreiben",
-      phoneTitle: "Anrufen"
+      phoneTitle: "WhatsApp"
     },
     imprint: {
       title: "Impressum",
@@ -94,7 +123,7 @@ export const translations = {
       sec2Title: "Registrierungsnummer (Cannes)",
       sec2Text: "Lizenznummer: 06029025760SB",
       sec3Title: "Kontakt",
-      sec3Phone: "Telefon: 0176 19690707",
+      sec3Phone: "WhatsApp: +33 757 690837",
       sec3Email: "E-Mail: cannes.fiorella@gmail.com",
       sec4Title: "Redaktionell verantwortlich",
       sec5Title: "EU-Streitschlichtung",
@@ -126,8 +155,8 @@ export const translations = {
       sec3Sub2: "Hinweis zur verantwortlichen Stelle",
       sec3Text2: "Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:",
       sec4Title: "4. Datenerfassung auf dieser Website",
-      sec4Sub1: "Anfragen per E-Mail oder Telefon",
-      sec4Text1: "Wenn Sie uns per E-Mail oder Telefon kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.",
+      sec4Sub1: "Anfragen per E-Mail oder WhatsApp",
+      sec4Text1: "Wenn Sie uns per E-Mail oder WhatsApp kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.",
       sec4Text2: "Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde."
     }
   },
@@ -145,9 +174,9 @@ export const translations = {
     },
     hero: {
       rating: "9.2 Excellently rated",
-      title1: "Fiorella's Cannes Oasis",
-      title2: "Your dream holiday on the French Riviera",
-      subtitle: "Escape the everyday and enjoy the Mediterranean lifestyle in our bright, friendly holiday apartment. Just send us an email – we reply quickly!",
+      title1: "Fiorella Oasis Cannes",
+      title2: "Basse-Californie",
+      subtitle: "Escape the everyday and enjoy the Mediterranean lifestyle in our bright, friendly holiday apartment in a quiet location in Cannes. Just send us an email – we reply quickly!",
       cta1: "Inquire now",
       cta2: "View gallery",
       imgAlt: "View of the sea on the French Riviera"
@@ -156,8 +185,8 @@ export const translations = {
       badgeTitle: "Sunlit",
       badgeSub: "Southern French sun",
       title1: "A home with",
-      title2: "Mediterranean charm",
-      description: "Fiorella's Cannes Oasis impresses with its bright, modern, and loving decor. Spread over 65 m², the apartment with 2 bedrooms, a spacious living area with a sofa bed, and a fully equipped kitchen offers plenty of space for up to 4 guests. Enjoy relaxing hours on the balcony overlooking the city and garden.",
+      title2: "stylish charm",
+      description: "Fiorella Oasis Cannes Basse-Californie impresses with its bright, modern decor and quiet residential location. Spread over 65 m², the apartment with 2 bedrooms, a spacious living area, and a fully equipped kitchen offers plenty of space for up to 4 guests. Enjoy relaxing hours on the balcony at a pleasant distance from the Croisette.",
       wifi: "Free WiFi",
       ac: "Air conditioning",
       kitchen: "Kitchen with dishwasher",
@@ -181,14 +210,43 @@ export const translations = {
       uploadNote: "(Please upload the images to the public/images folder)"
     },
     location: {
-      title: "The perfect location in Cannes",
-      subtitle: "10 Rue du Parc Alexandre III, Pointe Croisette, 06400 Cannes. Centrally located yet wonderfully quiet.",
+      title: "The perfect location in Basse-Californie",
+      subtitle: "10 Rue du Parc Alexandre III, 06400 Cannes. Central, walkable, and yet wonderfully quiet in Cannes.",
       beachTitle: "Close to the beach",
-      beachDesc: "In less than 1 km you can reach the beautiful sandy beach Plage Gazagnaire and the azure sea.",
+      beachDesc: "In less than 1 km you can reach the beautiful sandy beach Plage Gazagnaire and the azure sea at a pleasant distance.",
       centralTitle: "Central & Convenient",
-      centralDesc: "Only 2.4 km to the Palais des Festivals. Supermarkets (Carrefour 250m) and restaurants are within walking distance.",
+      centralDesc: "The Croisette and the center are close by. Supermarkets (Carrefour 250m) and restaurants are within walking distance.",
       transportTitle: "Perfectly connected",
       transportDesc: "Good access to public transport. Nice Airport (Aéroport Nice Côte d’Azur) is only 23 km away."
+    },
+    seo: {
+      home: {
+        title: "Fiorella Oasis Cannes Basse-Californie | Holiday Apartment in Cannes",
+        description: "Fiorella Oasis Cannes Basse-Californie is a stylish holiday apartment in a quiet location near Croisette, beach, and center – ideal for relaxing Cannes stays.",
+        h1: "Fiorella Oasis Cannes Basse-Californie"
+      },
+      location: {
+        title: "Basse-Californie in Cannes | Location of Fiorella Oasis Cannes",
+        description: "Learn more about the location of Fiorella Oasis Cannes in the elegant Basse-Californie district – quiet, near the beach, and well-connected to the center.",
+        h1: "Fiorella Oasis Cannes in Basse-Californie"
+      },
+      landingPage: {
+        title: "Fiorella Oasis Cannes Basse-Californie | Exclusive Accommodation",
+        description: "Discover the Fiorella Oasis Cannes Basse-Californie. Stylish holiday apartment in one of the most peaceful and sought-after locations in Cannes.",
+        h1: "Fiorella Oasis Cannes Basse-Californie"
+      }
+    },
+    landingPage: {
+      title: "Fiorella Oasis Cannes Basse-Californie",
+      subtitle: "Your retreat in the elegant Basse-Californie",
+      description: "Experience the perfect combination of peace and urban life. Our holiday apartment in Basse-Californie offers you exclusive comfort in the immediate vicinity of the Croisette and the beach.",
+      benefits: [
+        "Quiet residential location in the sought-after Basse-Californie district",
+        "At a pleasant distance from the Croisette and the beach",
+        "Excellent accessibility to central points in Cannes",
+        "Stylish ambiance for discerning guests"
+      ],
+      cta: "Inquire about stay now"
     },
     reviews: {
       rating: "9.2",
@@ -218,7 +276,7 @@ export const translations = {
       title: "Contact us",
       subtitle: "Just send us an email with your desired dates. We will reply to you shortly and personally.",
       emailTitle: "Write an email",
-      phoneTitle: "Call us"
+      phoneTitle: "WhatsApp"
     },
     imprint: {
       title: "Imprint",
@@ -226,7 +284,7 @@ export const translations = {
       sec2Title: "Registration number (Cannes)",
       sec2Text: "License number: 06029025760SB",
       sec3Title: "Contact",
-      sec3Phone: "Phone: 0176 19690707",
+      sec3Phone: "WhatsApp: +33 757 690837",
       sec3Email: "Email: cannes.fiorella@gmail.com",
       sec4Title: "Editorially responsible",
       sec5Title: "EU Dispute Resolution",
@@ -258,8 +316,8 @@ export const translations = {
       sec3Sub2: "Information on the responsible body",
       sec3Text2: "The responsible body for data processing on this website is:",
       sec4Title: "4. Data collection on this website",
-      sec4Sub1: "Inquiries by email or phone",
-      sec4Text1: "If you contact us by email or phone, your inquiry including all resulting personal data (name, inquiry) will be stored and processed by us for the purpose of processing your request. We do not pass on this data without your consent.",
+      sec4Sub1: "Inquiries by email or WhatsApp",
+      sec4Text1: "If you contact us by email or WhatsApp, your inquiry including all resulting personal data (name, inquiry) will be stored and processed by us for the purpose of processing your request. We do not pass on this data without your consent.",
       sec4Text2: "The processing of this data is based on Art. 6 Para. 1 lit. b GDPR, provided your request is related to the fulfillment of a contract or is necessary to carry out pre-contractual measures. In all other cases, the processing is based on our legitimate interest in the effective processing of the inquiries addressed to us (Art. 6 Para. 1 lit. f GDPR) or on your consent (Art. 6 Para. 1 lit. a GDPR) if this was requested."
     }
   }

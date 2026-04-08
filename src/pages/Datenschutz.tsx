@@ -38,7 +38,7 @@ export default function Datenschutz() {
           13189 Berlin
         </p>
         <p>
-          Telefon: 0176 19690707<br />
+          WhatsApp: +33 757 690837<br />
           E-Mail: cannes.fiorella@gmail.com
         </p>
 

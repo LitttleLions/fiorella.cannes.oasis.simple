@@ -3,6 +3,7 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import Impressum from './pages/Impressum';
 import Datenschutz from './pages/Datenschutz';
+import LandingPage from './pages/LandingPage';
 import GuideIndex from './pages/guide/GuideIndex';
 import FirstTimeVisitors from './pages/guide/articles/FirstTimeVisitors';
 import Croisette from './pages/guide/articles/Croisette';
@@ -41,6 +42,7 @@ export default function App() {
             <Route index element={<Home />} />
             <Route path="impressum" element={<Impressum />} />
             <Route path="datenschutz" element={<Datenschutz />} />
+            <Route path="fiorella-oasis-cannes-basse-californie" element={<LandingPage />} />
             
             {/* Cannes Guide Routes - German */}
             <Route path="cannes-guide" element={<GuideIndex />} />

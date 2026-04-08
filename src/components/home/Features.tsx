@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Sun, Wifi, Wind, Tv, Car, Utensils } from 'lucide-react';
 import { useLanguage } from '../../i18n/LanguageContext';
+import { Link } from 'react-router-dom';
 
 export default function Features() {
   const { t } = useLanguage();
@@ -68,7 +69,7 @@ export default function Features() {
               ))}
             </div>
 
-            <div className="grid grid-cols-3 gap-4 p-6 bg-muted rounded-2xl border border-border">
+            <div className="grid grid-cols-3 gap-4 p-6 bg-muted rounded-2xl border border-border mt-8">
               <div>
                 <p className="text-2xl md:text-3xl font-bold text-foreground mb-1">4</p>
                 <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider">{t('features', 'guests')}</p>
@@ -81,6 +82,12 @@ export default function Features() {
                 <p className="text-2xl md:text-3xl font-bold text-foreground mb-1">65</p>
                 <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider">{t('features', 'sqm')}</p>
               </div>
+            </div>
+
+            <div className="mt-8">
+              <Link to="/cannes-guide/basse-californie" className="text-primary hover:underline font-medium inline-flex items-center gap-2">
+                Entdecken Sie unsere ruhige Lage in Basse-Californie &rarr;
+              </Link>
             </div>
           </motion.div>
         </div>

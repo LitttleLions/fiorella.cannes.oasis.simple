@@ -1,5 +1,6 @@
 import { MapPin, Sun, Waves } from 'lucide-react';
 import { useLanguage } from '../../i18n/LanguageContext';
+import { Link } from 'react-router-dom';
 
 export default function Location() {
   const { t } = useLanguage();
@@ -35,6 +36,18 @@ export default function Location() {
             </div>
             <h3 className="text-xl font-semibold mb-3 tracking-tight">{t('location', 'transportTitle')}</h3>
             <p className="text-muted-foreground text-sm leading-relaxed">{t('location', 'transportDesc')}</p>
+          </div>
+        </div>
+
+        <div className="mt-12 text-center">
+          <p className="text-muted-foreground font-medium mb-4">Möchten Sie mehr über unser Viertel erfahren?</p>
+          <div className="flex justify-center gap-4 flex-wrap">
+            <Link to="/fiorella-oasis-cannes-basse-californie" className="btn-primary">
+              Fiorella Oasis Cannes Basse-Californie
+            </Link>
+            <Link to="/cannes-guide/basse-californie" className="btn-outline">
+              Mehr über die Lage in Cannes
+            </Link>
           </div>
         </div>
       </div>

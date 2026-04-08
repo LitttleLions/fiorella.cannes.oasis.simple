@@ -15,6 +15,7 @@ import { spring, summer, autumn, winter } from './seasons';
 import { moreThanGlamour } from './moreThanGlamour';
 import { rivieraAround } from './rivieraAround';
 import { cannesVsAntibes, cannesVsNice } from './comparisons';
+import { basseCalifornie } from './basseCalifornie';
 
 // Base translations (navigation, index, CTA)
 const baseTranslations = {
@@ -216,10 +217,10 @@ export const guideTranslations = {
       rivieraAround: rivieraAround.de,
       cannesVsAntibes: cannesVsAntibes.de,
       cannesVsNice: cannesVsNice.de,
-      // Add placeholder articles for neighborhoods, basseCalifornie, rueDAntibes, palaisFestivals
+      // Add placeholder articles for neighborhoods, rueDAntibes, palaisFestivals
       // These would need to be extracted to separate files as well for consistency
       neighborhoods: localArticles.de.firstTimeVisitors, // Temporary - should be extracted
-      basseCalifornie: localArticles.de.firstTimeVisitors, // Temporary
+      basseCalifornie: basseCalifornie.de,
       rueDAntibes: localArticles.de.firstTimeVisitors, // Temporary
       palaisFestivals: localArticles.de.croisette // Temporary
     }
@@ -250,7 +251,7 @@ export const guideTranslations = {
       cannesVsNice: cannesVsNice.en,
       // Temporary placeholders
       neighborhoods: localArticles.en.firstTimeVisitors,
-      basseCalifornie: localArticles.en.firstTimeVisitors,
+      basseCalifornie: basseCalifornie.en,
       rueDAntibes: localArticles.en.firstTimeVisitors,
       palaisFestivals: localArticles.en.croisette
     }

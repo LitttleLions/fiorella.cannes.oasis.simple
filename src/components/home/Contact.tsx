@@ -1,4 +1,4 @@
-import { Phone, Mail } from 'lucide-react';
+import { MessageCircle, Mail } from 'lucide-react';
 import { useLanguage } from '../../i18n/LanguageContext';
 
 export default function Contact() {
@@ -22,17 +22,17 @@ export default function Contact() {
               <span className="text-muted-foreground text-sm">cannes.fiorella@gmail.com</span>
             </a>
             
-            <a href="tel:+4917619690707" className="flex flex-col items-center p-8 bg-muted rounded-2xl hover:bg-secondary transition-colors group">
+            <a href="https://wa.me/33757690837" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center p-8 bg-muted rounded-2xl hover:bg-secondary transition-colors group">
               <div className="w-16 h-16 bg-card rounded-2xl flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform">
-                <Phone className="w-8 h-8 text-primary" />
+                <MessageCircle className="w-8 h-8 text-primary" />
               </div>
               <h3 className="font-semibold text-lg mb-2">{t('contact', 'phoneTitle')}</h3>
-              <span className="text-muted-foreground text-sm">0176 19690707</span>
+              <span className="text-muted-foreground text-sm">+33 757 690837</span>
             </a>
           </div>
           
           <div className="text-center border-t border-border pt-8">
-            <p className="text-sm font-medium text-foreground mb-2">Fiorella's Cannes Oasis</p>
+            <p className="text-sm font-medium text-foreground mb-2">Fiorella Oasis Cannes Basse-Californie</p>
             <p className="text-sm text-muted-foreground">Max Lingner Straße 17, 13189 Berlin</p>
           </div>
         </div>
